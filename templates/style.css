@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    height: auto;
+    background-color: #F6F4F3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+
+.flex-item img {
+    width: 80%;
+    height: 50vh;
+    padding: 10px;
+}
+
+.item1 {
+    flex-basis: 90%;
+}
+
+.flex-item p {
+    font-family: 'Inspiration', cursive;
+    font-size: 32px;
+    color: black;
+}
+
+.flex-item h1 {
+    font-family: 'Questrial', sans-serif;
+}
+
+.flex-item span {
+    font-family: 'Questrial', sans-serif;
+    color: #9c9a98;
+}
+
+.item2 {
+    flex-basis: 60%;
+}
+
+
+.image-container {
+    transition: all 0.3s linear;
+}
+
+.image-container:hover {
+    background-color: white;
+    /* display: inline-block; */
+    box-shadow: -17px 0px 50px -5px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Questrial', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.focus-in-contract-bck {
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(.25, .46, .45, .94) both;
+    animation: focus-in-contract-bck 1s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
